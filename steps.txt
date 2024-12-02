@@ -1,0 +1,14 @@
+1. Create a git repo  
+2. clone the repo (git clone ssh-url)
+3. cd repoFolder
+4. npm init and npm init -y 
+// npm init ==> will ask you everything 
+// npm init -y ==> will take default things 
+// npm init or npm init -y will generate file called
+// package.json 
+// this package.json will contain all the meta data or 
+// project details configs
+
+5. touch app.js 
+6. touch .gitignore and add node_modules in it
+7. add "type":"module" in package.json //
