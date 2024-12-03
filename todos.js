@@ -26,8 +26,15 @@ export async function addTask(loggedInUser) {
   const description = readline.question("Enter task description: ");
 
   const user = db.users.find((u) => u.username === loggedInUser.username);
+  console.log(user);
+  
   const newTask = { id: Date.now(), title, description };
   user.todos.push(newTask);
+  console.log(user);
+  console.log("============== below db============");
+   console.log(db);
+   
+  
 
   writeDB(db);
   console.log("Task added successfully!");

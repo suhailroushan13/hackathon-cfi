@@ -34,6 +34,8 @@ async function main() {
         break;
       case 2:
         loggedInUser = await loginUser();
+        //  console.log(loggedInUser);
+         
         break;
       case 3:
         await addTask(loggedInUser);

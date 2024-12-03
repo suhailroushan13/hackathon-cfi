@@ -21,10 +21,22 @@ export async function registerUser() {
   const password = readline.question("Enter a password: ", { hideEchoBack: true });
   const userExists = db.users.find((user) => user.username === username);
 
+
+  console.log("=======================  THIS IS WHAT U FOUND in DB ==============");
+  
+
+  console.log(userExists);
+
+  console.log("=========================================================");
+  
+  
+
   if (userExists) {
     console.log("User already exists! Please choose a different username.");
     return;
   }
+
+  
 
   db.users.push({ username, password, todos: [] });
   writeDB(db);
@@ -36,9 +48,13 @@ export async function loginUser() {
   const username = readline.question("Enter your username: ");
   const password = readline.question("Enter your password: ", { hideEchoBack: true });
   const user = db.users.find((u) => u.username === username && u.password === password);
+  // console.log(user);
+  
 
   if (user) {
     console.log("Login successful!");
+    // console.log(user);
+    
     return user;
   } else {
     console.log("Invalid credentials! Please try again.");

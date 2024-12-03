@@ -1,3 +1,30 @@
 {
-  "users": []
+  "users": [
+    {
+      "username": "rahman",
+      "password": "rahman",
+      "todos": []
+    },
+    {
+      "username": "samid",
+      "password": "samid",
+      "todos": []
+    },
+    {
+      "username": "suhail",
+      "password": "suhail",
+      "todos": []
+    },
+    {
+      "username": "sneha",
+      "password": "sneha",
+      "todos": [
+        {
+          "id": 1733201127848,
+          "title": "dont sleep",
+          "description": "sleep early"
+        }
+      ]
+    }
+  ]
 }
